@@ -4,7 +4,7 @@ import struct
 HOST = socket.gethostbyname("")
 
 s = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_IP)
-
+#Изменения для коммита
 s.bind((HOST, 0))
 
 s.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
